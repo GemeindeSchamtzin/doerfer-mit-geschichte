@@ -1,0 +1,12 @@
+{
+  "name": "doerfer-mit-geschichte",
+  "version": "0.0.1",
+  "description": "Schlatkow, Schmatzin, Wolfradshof: Dörfer mit Geschichte.",
+  "main": "index.js",
+  "repository": "https://github.com/GemeindeSchamtzin/doerfer-mit-geschichte.git",
+  "author": "Jan-Henrik Hempel <jan@schafe-vorm-fenster.de>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {}
+}
