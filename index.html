@@ -16,11 +16,14 @@
       @apply text-m;
     }
     header {
-      @apply max-w-screen-lg mx-auto mb-20;
+      @apply max-w-screen-lg mx-auto mb-20 pb-12;
       @apply bg-gray-200;
     }
     a {
-      @apply text-primary border-dotted border-b border-primary hover:text-black;
+      @apply text-primary border-dotted border-b border-primary;
+    }
+    nav a {
+      @apply hover:text-black;
     }
     h1 {
       @apply max-w-screen-lg m-auto mb-12;
@@ -594,8 +597,8 @@
     </div>
   </footer>
 
-  <div id="nachoben" class="fixed bottom-4 right-4"> <a
-      class="block h-16 w-16 bg-primary border border-white border-solid rounded-full text-m text-white font-bold text-center leading-tight pt-4 opacity-50 hover:opacity-100"
+  <div id="nachoben" class="fixed bottom-6 right-6"> <a
+      class="block h-16 w-16 bg-primary border border-white border-solid rounded-full text-m text-white hover:text-white font-bold text-center leading-tight pt-4 opacity-50 hover:opacity-100"
       title="zum Seitenanfang" href="#header">▲</a>
   </div>
 </body>
