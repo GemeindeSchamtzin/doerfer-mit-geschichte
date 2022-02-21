@@ -1,7 +1,8 @@
 tailwind.config = {
   theme: {
     fontFamily: {
-      sans: ['serif'],
+      sans: ['sans-serif'],
+      serif: ['serif'],
     },
     fontSize: {
       s: '1rem',

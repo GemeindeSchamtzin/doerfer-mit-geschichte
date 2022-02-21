@@ -9,7 +9,7 @@
   <script src="./tailwind.config.js"></script>
   <style type="text/tailwindcss">
     html {
-      @apply bg-white px-0 sm:px-4;
+      @apply bg-white text-black px-0 sm:px-4 font-serif;
     }
     body {
       @apply m-auto;
@@ -20,12 +20,12 @@
       @apply bg-gray-200;
     }
     a {
-      @apply text-primary border-dotted border-b border-primary;
+      @apply text-primary border-dotted border-b border-primary hover:text-black;
     }
     h1 {
       @apply max-w-screen-lg m-auto mb-12;
       @apply block bg-primary text-white pt-32 pb-6;
-      @apply text-xl font-bold;
+      @apply font-sans text-xl font-bold;
     }
     h1 span {
       @apply block max-w-screen-md px-8 md:mx-auto;
@@ -36,14 +36,14 @@
     h2 {
       @apply max-w-screen-lg m-auto mb-12;
       @apply block bg-primary text-white pt-20 pb-6;
-      @apply text-l font-bold;
+      @apply font-sans text-l font-bold;
     }
     h2 span {
       @apply block max-w-screen-md px-8 md:mx-auto;
     }
     h3 {
-      @apply max-w-screen-md px-8 md:mx-auto mb-4;
-      @apply text-l font-bold;
+      @apply max-w-screen-md px-8 md:mx-auto mb-4 mt-8;
+      @apply font-sans text-l font-bold leading-tight text-primary;
     }
     h4 {
       @apply max-w-screen-md px-8 md:mx-auto mb-4;
@@ -54,13 +54,12 @@
     }
     ul {
       @apply max-w-screen-md px-8 md:mx-auto mb-4;
-      @apply list-disc pl-12;
     }
     ul li {
       @apply mb-2;
     }
     blockquote {
-      @apply: italic;
+      @apply italic;
     }
     figure {
       @apply w-full h-auto max-w-screen-md px-8 md:mx-auto mb-8 pt-4;
@@ -75,7 +74,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <h1><span>
         Schmatzin – Schlatkow – Wolfradshof<br />
         Dörfer mit Geschichte
@@ -90,18 +89,20 @@
       In Schlatkow reicht sie weit über achthundert Jahre zurück.
     </p>
     <nav class="mt-12">
-      <ul>
-        <li><a href="#Ein-Blick-zurück">Ein Blick zurück</a></li>
-        <li><a href="#Kulturlandschaft-Peenetal">Kulturlandschaft Peenetal</a></li>
-        <li><a href="#Das-Gutsdorf">Das Gutsdorf</a></li>
-        <li><a href="#Die-Melkerschule-Schlatkow">Die Melkerschule Schlatkow</a></li>
-        <li><a href="#Ein-gerettetes-Kleinod">Ein gerettetes Kleinod</a></li>
-        <li><a href="#Unter-den-drei-Kronen">Unter den drei Kronen</a></li>
-        <li><a href="#Die-schwedische-Landesaufnahme">Die schwedische Landesaufnahme</a></li>
-        <li><a href="#Schwedisches-Pommern-oder-Pommersches-Schweden">Schwedisches Pommern oder Pommersches
+      <ul class="list-none">
+        <li>❯ <a class="ml-1" href="#Ein-Blick-zurück">Ein Blick zurück</a></li>
+        <li>❯ <a class="ml-1" href="#Kulturlandschaft-Peenetal">Kulturlandschaft Peenetal</a></li>
+        <li>❯ <a class="ml-1" href="#Das-Gutsdorf">Das Gutsdorf</a></li>
+        <li>❯ <a class="ml-1" href="#Die-Melkerschule-Schlatkow">Die Melkerschule Schlatkow</a></li>
+        <li>❯ <a class="ml-1" href="#Ein-gerettetes-Kleinod">Ein gerettetes Kleinod</a></li>
+        <li>❯ <a class="ml-1" href="#Unter-den-drei-Kronen">Unter den drei Kronen</a></li>
+        <li>❯ <a class="ml-1" href="#Die-schwedische-Landesaufnahme">Die schwedische Landesaufnahme</a></li>
+        <li>❯ <a class="ml-1" href="#Schwedisches-Pommern-oder-Pommersches-Schweden">Schwedisches Pommern oder
+            Pommersches
             Schweden?</a>
         </li>
-        <li><a href="#Matrikelkarte-der-Landesaufnahme-von-Schwedisch-Pommern">Matrikelkarte der Landesaufnahme von
+        <li>❯ <a class="ml-1" href="#Matrikelkarte-der-Landesaufnahme-von-Schwedisch-Pommern">Matrikelkarte der
+            Landesaufnahme von
             Schwedisch-Pommern</a></li>
       </ul>
     </nav>
@@ -591,6 +592,11 @@
       </p>
     </div>
   </footer>
+
+  <div id="nachoben" class="fixed bottom-4 right-4"> <a
+      class="block h-16 w-16 bg-primary border border-white border-solid rounded-full text-m text-white font-bold text-center leading-tight pt-4 opacity-50 hover:opacity-100"
+      title="zum Seitenanfang" href="#header">▲</a>
+  </div>
 </body>
 
 </html>
