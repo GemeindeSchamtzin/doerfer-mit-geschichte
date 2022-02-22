@@ -14,7 +14,7 @@
       @apply w-screen overflow-x-hidden bg-white text-black px-0 sm:px-4 font-serif;
     }
     body {
-      @apply w-screen overflow-x-hidden m-auto;
+      @apply w-screen overflow-x-hidden m-auto pb-20;
       @apply text-m;
     }
     header {
@@ -29,7 +29,7 @@
     }
     h1 {
       @apply max-w-screen-lg m-auto mb-12;
-      @apply block bg-primary text-white pt-24 pb-12;
+      @apply block bg-primary text-lightprimary pt-24 pb-12;
       @apply font-sans text-xl font-bold;
     }
     h1 span {
@@ -40,15 +40,15 @@
     }
     h2 {
       @apply max-w-screen-lg m-auto mb-12;
-      @apply block bg-primary text-white pt-20 pb-6;
-      @apply font-sans text-l font-bold;
+      @apply block bg-primary text-lightprimary pt-20 pb-6;
+      @apply font-sans text-l font-black;
     }
     h2 span {
       @apply block max-w-screen-md px-8 md:mx-auto;
     }
     h3 {
       @apply max-w-screen-md px-8 md:mx-auto mb-4 mt-8;
-      @apply font-sans text-l font-bold leading-tight text-primary;
+      @apply font-sans text-l font-black leading-tight text-primary;
     }
     h4 {
       @apply max-w-screen-md px-8 md:mx-auto mb-4;
@@ -76,6 +76,30 @@
       @apply mt-2 text-s text-gray-700;
     }
     </style>
+  <link href="http://fonts.cdnfonts.com/css/minion-pro" rel="stylesheet" />
+  <style>
+    @import url('http://fonts.cdnfonts.com/css/minion-pro');
+
+    @font-face {
+      font-family: 'Meta Pro';
+      src: local('Meta Pro Black'), local('Meta-Pro-Black'),
+        url('./fonts/MetaPro-Black.woff2') format('woff2'),
+        url('./fonts/MetaPro-Black.woff') format('woff'),
+        url('./fonts/MetaPro-Black.ttf') format('truetype');
+      font-weight: 900;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Minion Pro';
+      src: local('Minion Pro Regular'), local('Minion-Pro-Regular'),
+        url('./fonts/MinionPro-Regular.woff2') format('woff2'),
+        url('/fonts/MinionPro-Regular.woff') format('woff'),
+        url('/fonts/MinionPro-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
 </head>
 
 <body>
@@ -115,7 +139,7 @@
   </header>
 
   <main>
-    <article id="Ein-Blick-zurück" class="bg-red-100">
+    <article id="Ein-Blick-zurück" class="bg-lightred">
       <h2><span>Ein Blick zurück</span></h2>
       <p>
         1168 bestätigte der Camminer Bischof Konrad I. von Pommern dem Kloster Grobe auf Usedom alle Schenkungen der
@@ -143,7 +167,7 @@
     </article>
 
 
-    <article id="Kulturlandschaft-Peenetal" class="bg-red-100">
+    <article id="Kulturlandschaft-Peenetal" class="bg-lightred">
       <h2><span>Kulturlandschaft Peenetal</span></h2>
       <p>
         Die Peene ist ein schmaler, nur 85 km langer, meist stiller, vom größten Niedermoor Mitteleuropas umgebener
@@ -191,7 +215,7 @@
     </article>
 
 
-    <article id="Das-Gutsdorf" class="bg-red-100">
+    <article id="Das-Gutsdorf" class="bg-lightred">
       <h2><span>Das Gutsdorf</span></h2>
       <p>
         Schmatzin, Schlatkow und Wolfradshof haben sich, wie viele Dörfer der Region, nicht als Bauern-, sondern als
@@ -255,7 +279,7 @@
     </article>
 
 
-    <article id="Die-Melkerschule-Schlatkow" class="bg-red-100">
+    <article id="Die-Melkerschule-Schlatkow" class="bg-lightred">
       <h2 class="mb-0"><span>Die Melkerschule Schlatkow</span></h2>
       <figure class="max-w-screen-lg px-0 pt-0">
         <img src="./img/Teilnehmer-des-Meisterlehrgangs-1937.jpg"
@@ -285,7 +309,7 @@
     </article>
 
 
-    <article id="Ein-gerettetes-Kleinod" class="bg-red-100">
+    <article id="Ein-gerettetes-Kleinod" class="bg-lightred">
       <h2><span>Ein gerettetes Kleinod</span></h2>
       <p>
         Dass es die Schlatkower Kirche aus dem 13./14. Jahrhundert heute noch gibt, ist ein kleines Wunder. Bereits im
@@ -328,13 +352,13 @@
     </article>
 
 
-    <article id="Unter-den-drei-Kronen" class="bg-red-100">
+    <article id="Unter-den-drei-Kronen" class="bg-lightred">
       <h2><span>Unter den drei Kronen</span></h2>
       <p>
         Erst vor gut 200 Jahren wurde Vorpommern preußisch. Davor war die Region anderthalb Jahrhunderte Teil des
         schwedischen Königreichs.
       </p>
-      <figure>
+      <figure class="max-w-screen-sm">
         <img src="./img/Great_coat_of_arms_of_Sweden.svg" alt="Die drei Kronen: das Wappen des schwedischen Königreichs"
           title="https://de.wikipedia.org/wiki/Datei:Great_coat_of_arms_of_Sweden.svg" />
         <figcaption>Die drei Kronen: das Wappen des schwedischen Königreichs (Sodacan, Public domain, via Wikimedia
@@ -393,7 +417,7 @@
     </article>
 
 
-    <article id="Die-schwedische-Landesaufnahme" class="bg-blue-100">
+    <article id="Die-schwedische-Landesaufnahme" class="bg-lightblue">
       <h2><span>Die schwedische Landesaufnahme</span></h2>
       <figure>
         <img src="./img/schwedische-flagge.svg" alt="Die seit 1906 gültige Flagge Schwedens"
@@ -434,7 +458,7 @@
     </article>
 
 
-    <article id="Schwedisches-Pommern-oder-Pommersches-Schweden" class="bg-blue-100">
+    <article id="Schwedisches-Pommern-oder-Pommersches-Schweden" class="bg-lightblue">
       <h2><span>Schwedisches Pommern oder Pommersches Schweden?</span></h2>
       <p>
         „So klein Pommern auch ist, so bringt es uns doch mehr Ansehen als fast das halbe Schweden. All die
@@ -508,7 +532,7 @@
     </article>
 
 
-    <article id="Matrikelkarte-der-Landesaufnahme-von-Schwedisch-Pommern" class="bg-blue-100">
+    <article id="Matrikelkarte-der-Landesaufnahme-von-Schwedisch-Pommern" class="bg-lightblue">
       <h2><span>Matrikelkarte der Landesaufnahme von Schwedisch-Pommern</span></h2>
       <figure>
         <img src="./img/BII-47-Schlatkow-Sladekow-Amt-Distrikt-Wolgast.png" alt="BII 47 Schlatkow (Sladekow) Amt/Distrikt Wolgast, Oloff (Olaus) Spaak, 1694, Originalmaßstab:
@@ -539,7 +563,7 @@
         der online-Enzyklopädie wikipedia.de hinzuweisen.
       </p>
     </div>
-    <div id="foerderung" class="">
+    <div id="foerderung">
       <p>
         Die Ausstellung und Publikation wurde durch das „Soforthilfeprogramm Heimatmuseen und landwirtschaftliche Museen
         2021“, ein Projekt des Deutschen Verbands für Archäologie e.V. (DVA) in Kooperation mit dem Deutschen
@@ -557,7 +581,6 @@
             class="h-24" src="./img/foerderung/Logo_Soforthilfeprogramm_gesamt.svg" alt="Soforthilfeprogramm Heimatmuseen und landwirtschaftliche Museen
             2021" /></a>
       </div>
-      <p></p>
     </div>
     <div id="impressum" class="">
       <h3>Impressum</h3>

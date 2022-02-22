@@ -1,8 +1,8 @@
 tailwind.config = {
   theme: {
     fontFamily: {
-      sans: ['sans-serif'],
-      serif: ['serif'],
+      sans: ['Meta Pro', 'sans-serif'],
+      serif: ['Minion Pro', 'serif'],
     },
     fontSize: {
       s: '1rem',
@@ -12,7 +12,10 @@ tailwind.config = {
     },
     extend: {
       colors: {
-        primary: '#75010d',
+        primary: '#8D2F45',
+        lightprimary: '#E9DAD7',
+        lightred: '#E0DAE1',
+        lightblue: '#C2DCE1'
       },
     },
   },
